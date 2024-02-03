@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GiGe</title>
+        <link rel="stylesheet" href="../css/home.css">
+        <link rel="stylesheet" href="../css/signup.css">
+        <link rel="stylesheet" href="../css/product.css">
+        <script src="https://kit.fontawesome.com/bc6f27e589.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="../images/Frame.png" type="image">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="../css/edit.css">
+        <link rel="stylesheet" href="../css/profile.css">
+    </head>
+    <body>
+        <div class = "nav-all">
+            <div class="brand">
+                <img src = "../images/Frame.png" width="100px" height="100px">
+            </div>
+            <p>Your Profile</p>
+            <button style="margin-left: auto;font-size: 25px;" onclick="back()">Go Back</button>
+            <button style="font-size: 25px;"><i class="fas fa-boxes"></i>Orders</button>
+            <a class="sign" href="wallet"><i class="fas fa-wallet"></i></a>
+			<a class="sign" href="login.html"><i class="fa fa-user-circle"></i></a>
+            <a class="sign" href="#dropdown?"><i class="fas fa-sign-in-alt"></i></a>
+        </div>
+        <div id="page-des"><i class="fas fa-arrow-circle-left"></i><h2>Profile</h2></div>
+        <form>
+        <div class="prof-det">
+            <div class="user-img">
+                <label for="p-img"><img id="img-s" src="../images/atul_260x261.jpeg"></label>
+                <input type="file" onchange="update_img(event)" style="display: none;" id="p-img" name="p-img">
+            </div>
+            <div class="user-det">
+                    <table>
+                        <tr>
+                            <th class="det-col-1">Name</th>
+                            <td><input type="text" required id="u-name" value="Atul Agarwal"></td>
+                        </tr>
+                        <tr>
+                            <th class="det-col-1">Email</th>
+                            <td><input type="email" required id="u-email" value="atulagarwal0721@gmail.com"></td>
+                        </tr>
+                        <tr>
+                            <th class="det-col-1">Phone Number</th>
+                            <td><input type="text" required id="u-no" value="8879728598"></td>
+                        </tr>
+                        <tr>
+                            <th class="det-col-1">Bate of Birth</th>
+                            <td><input type="text" required id="u-dob" value="7 Oct 2001"></td>
+                        </tr>
+                        <tr>
+                            <th class="det-col-1">College</th>
+                            <td><input type="text" required id="u-loc" value="VIT Vellore"></td>
+                        </tr>
+                        <tr>
+                            <th class="det-col-1">Address</th>
+                            <td><textarea rows="3" cols="80" id="u-add">consectetur adipiscing elit. Amet vivamus at lacus semper rhoncus amet, vitae luctus condimentum. </textarea></td>
+                        </tr>
+                    </table>
+                    <div id="p-but">
+                        <input type="submit">
+                    </div>
+            </div>
+        </div>
+        </form>
+        <script>
+            const back = () =>{
+                window.history.back();
+            };
+            const update_img = (event) =>{
+            var d_img = document.getElementById("img-s");
+            var out = event.target.files[0];
+            d_img.src = URL.createObjectURL(out);
+
+        }
+        </script>
+    </body>
+</html>

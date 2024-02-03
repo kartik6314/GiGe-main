@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GET Mode</title>
+	    <link rel="stylesheet" href="../css/home.css">
+        <script src="https://kit.fontawesome.com/bc6f27e589.js" crossorigin="anonymous"></script>
+	    <link rel="preconnect" href="https://fonts.gstatic.com">
+	    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/product.css">
+        <link rel="stylesheet" href="../css/category.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="../images/Frame.png" type="image">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".s-new").slideToggle("fast");
+                $("#cat").hover(function(){
+                    $("#cat").css('cursor','pointer');
+                })
+                $("#cat").click(function(){
+                    $(".s-new").slideToggle("slow");
+                });
+            });
+        </script>
+        <!-- <script type="text/javascript" src="product.js"></script> -->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <nav class="head">
+			<div style="background-color: black;" id="logo"><img src="../images/Frame.png" width="75px" height="75px"></div>
+            <div id = "cat"><i class="fas fa-filter"></i>Categories</div>
+            <form class="search" action="" method="GET">
+                <input type="text" name="search" placeholder="Find Goods and Services in your Campus">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+			<a class="about" href="#ques">Switch To Give</a>
+			<a class="sign" href="login.html"><i class="fa fa-user-circle"></i></a>
+            <a class="sign" href="#dropdown?"><i class="fas fa-sign-in-alt"></i></a>
+		</nav>
+        <div class="s-new">
+            <a href="#" class="about cat-sel">Electronics</a>
+            <a href="#" class="about cat-sel">Sports</a>
+            <a href="#" class="about cat-sel">Academics</a>
+            <a href="#" class="about cat-sel">Daily Needs</a>
+        </div>
+        <div class="user-slide">
+            <div id="img-center">
+                <img id="up_img" style="width:100%;object-fit: contain;" height="300px" src="../images/Frame.png">
+            </div>
+        </div>
+        <div class = "items-disp">
+            <div class="cat-disp">
+                <p>Electronics</p>
+                <a href="" style="color: white;" id="righter">See More</a>
+            </div>
+            <div class="item-box">
+                <div class="item-box-1">
+                    <img id="main-img" src="../images/cricket.jpg" width="250px" height="200px">
+                    <div id="p-hide">
+                        <img id="sec-img" src="../images/atul_260x261.jpeg" width="20px" height="20px" style="margin-right:3px">
+                        Harry Potter Book and the half blood prince
+                    </div>
+                    <table>
+                        <tr>
+                            <td>500</td>
+                            <td>5 Days</td>
+                        </tr>
+                    </table>
+                    <a href="#" id="p-a">GET</a>
+                </div>
+                <div class="item-box-1">
+                    <img id="main-img" src="../images/cricket.jpg" width="250px" height="200px">
+                    <div id="p-hide">
+                        <img id="sec-img" src="../images/atul_260x261.jpeg" width="20px" height="20px" style="margin-right:3px">
+                        Harry Potter Book and the half blood prince
+                    </div>
+                    <table>
+                        <tr>
+                            <td>500</td>
+                            <td>5 Days</td>
+                        </tr>
+                    </table>
+                    <a href="#" id="p-a">GET</a>
+                </div>
+                <div class="item-box-1">
+                    <img id="main-img" src="../images/cricket.jpg" width="250px" height="200px">
+                    <div id="p-hide">
+                        <img id="sec-img" src="../images/atul_260x261.jpeg" width="20px" height="20px" style="margin-right:3px">
+                        Harry Potter Book and the half blood prince
+                    </div>
+                    <table>
+                        <tr>
+                            <td>500</td>
+                            <td>5 Days</td>
+                        </tr>
+                    </table>
+                    <a href="#" id="p-a">GET</a>
+                </div>
+            </div>
+        </div>
+        <div class = "items-disp">
+            <div class="cat-disp">
+                <p>Electronics</p>
+                <a href="" style="color: white;" id="righter">See More</a>
+            </div>
+            <div class="item-box">
+                <div class="item-box-1">
+                    <img id="main-img" src="../images/cricket.jpg" width="250px" height="200px">
+                    <div id="p-hide">
+                        <img id="sec-img" src="../images/atul_260x261.jpeg" width="20px" height="20px" style="margin-right:3px">
+                        Harry Potter Book and the half blood prince
+                    </div>
+                    <table>
+                        <tr>
+                            <td>500</td>
+                            <td>5 Days</td>
+                        </tr>
+                    </table>
+                    <a href="#" id="p-a">GET</a>
+                </div>
+                <div class="item-box-1">
+                    <img id="main-img" src="../images/cricket.jpg" width="250px" height="200px">
+                    <div id="p-hide">
+                        <img id="sec-img" src="../images/atul_260x261.jpeg" width="20px" height="20px" style="margin-right:3px">
+                        Harry Potter Book and the half blood prince
+                    </div>
+                    <table>
+                        <tr>
+                            <td>500</td>
+                            <td>5 Days</td>
+                        </tr>
+                    </table>
+                    <a href="#" id="p-a">GET</a>
+                </div>
+                <div class="item-box-1">
+                    <img id="main-img" src="../images/cricket.jpg" width="250px" height="200px">
+                    <div id="p-hide">
+                        <img id="sec-img" src="../images/atul_260x261.jpeg" width="20px" height="20px" style="margin-right:3px">
+                        Harry Potter Book and the half blood prince
+                    </div>
+                    <table>
+                        <tr>
+                            <td>500</td>
+                            <td>5 Days</td>
+                        </tr>
+                    </table>
+                    <a href="#" id="p-a">GET</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+			<div class="footer-container">
+				<div class="comp">
+					<p>Company</p>
+					<p>Team</p>
+					<p>History</p>
+					<p>Contact us</p>
+					<p>Locations</p>
+				</div>
+				<div class="features">
+					<p>Features</p>
+					<p>Cool Stuff</p>
+					<p>GitHub</p>
+				</div>
+				<div class="Legal">
+					<p>Privacy Policy</p>
+					<p>Terms Of Use</p>
+				</div>
+			</div>
+			<div class="git">
+				<img src="../images/Vector.png">
+				<img src="../images/Vector (1).png">
+				<img src="../images/Vector (4).png">
+				<img src="../images/Vector (3).png">
+		    </div>
+	    </div>
+        <script>
+            var sources = ["../images/features 2.png","../images/Frame.png","../images/annie-spratt-jFtBa6aEJqk-unsplash (1).jpg"];
+            var i = 0;
+            setInterval(function(){
+                document.getElementById("up_img").src = sources[i%3];
+                i = i+1;
+            },5000);
+        </script>
+    </body>
+</html>

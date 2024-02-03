@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="../css/homebasic.css">
+	<link rel="stylesheet" href="../css/home.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/signup.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		.head{
+			background-color: black;
+			color:#FFDF00;
+		}
+		.head > a{
+			color:#FFDF00;
+		}
+		.head > a:hover{
+			background-color:#FFDF00;
+			color:black;
+			border-bottom:2px solid black;
+			border-top: 2px solid black;
+		}
+	</style>
+</head>
+<body>
+	<div class="full">
+		<nav class="head">
+			<div id="logo">GiGe</div>
+			<a id="about" href="home.html">About</a>
+			<a id="sign" href="signup.html">Sign Up</a>
+		</nav>
+	</div>
+	<div class="whole">
+		<div class="container">
+			<div class="child1">
+				<h1>Login</h1>
+                    <p style="font-size: 40px;">Good to see you again</p>
+			</div>
+			<div class="child">
+				<form onsubmit="return checker()">
+					<div class="aligner">
+						<p style="color: black;font-size: 40px;">We just need a few details</p><br>
+						<input type="text" id="username" name="username" required placeholder="User Name">
+						<input type="password" id="pass1" name="pass1" required placeholder="Password">
+						<input type="submit" value="submit">
+					</div>
+					<div style="color: black; text-align: center;">
+						<h3 id="ans"></h3>
+						<h3 id="ans1"></h3>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script>
+		function checker(){
+			var txt = document.getElementById("username").value;
+			var num = new RegExp("^[0-9]");
+			if((txt.length<8) || (num.test(txt)))
+			{
+				document.getElementById("ans").innerHTML ="Invalid Username";
+				return false
+			}
+			var p = document.getElementById("pass1").value;
+			if(p.length<8)
+			{
+				document.getElementById("ans").innerHTML ="Invalid Password";
+				return false
+			}
+		}
+	</script>
+</body>
+</html>
